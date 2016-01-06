@@ -25,9 +25,9 @@
         <p><%= @video.description %></p>
       </div>
       <div class="card-action">
-        <a href="#">Previous</a>
+        <%= link_to "Previous", @prev_video if !@prev_video.nil? %>&nbsp;
         <span class="right">
-          <a href="#">Next</a>
+          <%= link_to "Next", @next_video if !@next_video.nil? %>
         </span>
       </div>
     </div>
